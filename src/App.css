@@ -1,0 +1,18 @@
+
+#location_img {
+
+animation: spin 11s linear infinite;
+}
+
+
+
+
+
+@keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
