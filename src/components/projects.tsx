@@ -78,8 +78,8 @@ function Projects() {
 
         <ProjectItem
           number="03"
-          title="RA Investment"
-          videoSrc="/rainvestmentwebversion.mp4"
+          title="Flame v3"
+          videoSrc="/comingsoon.mp4"
         />
         <hr className="border-dashed text-stone-500" />
       </div>
