@@ -25,11 +25,17 @@ function App() {
 
   return (
     <>
-      <div className="h-[100vh] w-full flex flex-col md:flex-row  bg-[#D7C39D] ">
-        <div className="flex flex-col w-5xl pt-20 border-r border-dashed border-stone-500">
+          <Fade direction="left" delay={500}>
+            <div className="fixed shadow-md flex flex-row items-center gap-2 left-0 top-50 p-2 mt-30 rounded-r-2xl  border-r border-b border-t border-stone-500 border-dashed">
+              <span className="text-2xl text-stone-600">Location</span>{" "}
+              <img id="location_img"  src={flag_spain} width={50} alt="" />
+            </div>
+          </Fade>
+      <div className=" md:h-[100vh] overflow-hidden w-full flex flex-col md:flex-row  bg-[#F2DBB6] ">
+        <div className="flex flex-col justify-between items-center md:w-5xl pt-20 border-r border-dashed border-stone-500">
           <div className="flex items-center flex-col justify-center  ">
             <Fade delay={100}>
-              <span className="text-center text-shadow-md text-shadow-stone-500 text-stone-900  text-7xl">
+              <span className="text-center text-shadow-md text-shadow-stone-500 text-stone-900    text-5xl">
                 Adrian Cabrera
               </span>
             </Fade>
@@ -58,18 +64,25 @@ function App() {
               </div>
             </Fade>
           </div>
-          <Fade direction="left" delay={500}>
-            <div className="fixed shadow-md flex flex-row items-center gap-2 left-0 top-1/2 p-2 mt-30 rounded-r-2xl  border-r border-b border-t border-stone-500 border-dashed">
-              <span className="text-2xl text-stone-600">Location</span>{" "}
-              <img id="location_img"  src={flag_spain} width={50} alt="" />
-            </div>
-          </Fade>
+   
+     
           <Fade delay={400}>
-            <img
-              className=" absolute bottom-0 mask-r-from-5% transition-all duration-300 ease-in-out hover:mask-r-from-20%"
+            
+
+          <img
+  className="mask-r-from-5% transition-all duration-300 ease-in-out hover:mask-r-from-20% object-contain"
+  src={face}
+  alt="face of me in ghibli style"
+  width={600}
+
+/>
+
+            {/* <img
+              className="mask-r-from-5% transition-all duration-300 ease-in-out hover:mask-r-from-20%"
               src={face}
               alt="face of me in ghibli style"
-            />
+              width={300}
+            /> */}
           </Fade>
         </div>
 
@@ -77,7 +90,7 @@ function App() {
         <div className="ml-10 flex flex-row  items-center border-r border-dashed border-stone-500 pr-5">
           <Fade delay={1500}>
             <div className="tabs pt-20 flex flex-col gap-20">
-              <ul className="flex flex-col gap-20">
+              <ul className="flex flex-row md:flex-col gap-2 md:gap-20">
                 <li className="">
                   <a
                     onClick={() => selectedSection("skills")}
@@ -131,7 +144,10 @@ function App() {
         )}
         {section === "projects" && (
           <Fade>
-         <Projects/>
+        
+            <Projects/>
+   
+     
           </Fade>
         )}
       </div>
