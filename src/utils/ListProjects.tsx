@@ -9,7 +9,8 @@ const ListProjects = [
         "title": "Namastox",
         "videoSrc":"/namastox_video.mp4",
         "companyLogo": upf_logo,
-        "technologies": [{"name":"Angular","logo":<FaAngular className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},{"name":"Bootstrap 5","logo":<FaBootstrap className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />}]
+        "technologies": [{"name":"Angular","logo":<FaAngular className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},{"name":"Bootstrap 5","logo":<FaBootstrap className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />}],
+        "urlWebsite": "https://namastox.upf.edu"
     
     },
     {
@@ -17,14 +18,15 @@ const ListProjects = [
         "title": "Permanens",
         "videoSrc":"/permanens.mp4",
         "companyLogo": upf_logo,
-        "technologies": [{"name":"React","logo":<FaReact className="wtransition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},{"name":"Tailwind CSS","logo":<SiTailwindcss className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />}]
+        "technologies": [{"name":"React","logo":<FaReact className="wtransition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},{"name":"Tailwind CSS","logo":<SiTailwindcss className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />}],
+        "urlWebsite": "http://permanens.upf.edu"
     },
     {
         "number":"03",
         "title": "Flame v3",
         "videoSrc": false,
         "companyLogo": upf_logo,
-        "technologies": [{"name":"Angular","logo":<FaAngular className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},{"name":"Bootstrap 5","logo":<FaBootstrap className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />}]
+        "technologies": [{"name":"Angular","logo":<FaAngular className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},{"name":"Bootstrap 5","logo":<FaBootstrap className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />}]
     },
     {
         "number":"04",
@@ -32,10 +34,10 @@ const ListProjects = [
         "videoSrc": "/rainvestmentwebversion.mp4",
         "companyLogo": ra_studio_logo,
         "technologies": [
-        {"name":"React","logo":<FaReact className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},
-        {"name":"Tailwind CSS","logo":<SiTailwindcss className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},
-        {"name":"NodeJS","logo":<FaNodeJs className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},
-        {"name":"MongoDB","logo":<SiMongodb className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41]" size={40} />},]
+        {"name":"React","logo":<FaReact className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},
+        {"name":"Tailwind CSS","logo":<SiTailwindcss className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},
+        {"name":"NodeJS","logo":<FaNodeJs className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},
+        {"name":"MongoDB","logo":<SiMongodb className="transition-opacity duration-300 ease-in-out opacity-75 group-hover:opacity-100 text-[#665A41] w-[20px] h-[20px]  md:w-[40px] md:h-[40px]"  />},]
     },
 
 

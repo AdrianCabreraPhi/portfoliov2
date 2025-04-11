@@ -19,7 +19,7 @@ function Skills() {
   return (
     <>
       <div
-        className="w-dvh h-[100vh] flex flex-col items-center pt-20 gap-15"
+        className="w-dvh h-[100vh]  flex flex-col items-center pt-20 gap-15"
         id="skills"
       >
         <div className="container-tabs-skills">
@@ -59,7 +59,7 @@ function Skills() {
             </span>
           </Fade>
           <Fade>
-            <div className="w-auto flex flex-row justify-center-safe  gap-15">
+            <div className="w-auto flex-wrap  flex flex-row justify-center-safe  gap-15">
               {MainStack.map((skill, index) => (
                 <CardSkill
                   fadeDelay={index * 100}
@@ -75,7 +75,7 @@ function Skills() {
             </Fade>
             <Fade>
 
-            <div className="w-auto flex flex-row justify-center-safe  gap-15">
+            <div className="w-auto flex flex-wrap  flex-row justify-center-safe  gap-15">
               {MainStackCSS.map((skill, index) => (
                 <CardSkill
                   fadeDelay={index * 100}
@@ -90,7 +90,7 @@ function Skills() {
             </Fade>
             <Fade>
 
-            <div className="w-auto flex flex-row justify-center-safe  gap-15">
+            <div className="w-auto flex flex-wrap  flex-row justify-center-safe  gap-15">
               {TechnologiesLearning.map((skill, index) => (
                 <CardSkill
                   fadeDelay={index * 100}
@@ -110,7 +110,7 @@ function Skills() {
               <Fade>
             <span className="text-[#665A41] opacity-70 text-sm">Other Languages</span>
 
-              <div className="w-auto flex flex-row justify-center-safe  gap-15">
+              <div className="w-auto flex flex-wrap  flex-row justify-center-safe  gap-15">
                 {OtherLanguages.map((skill, index) => (
                   <CardSkill
                     fadeDelay={index * 100}
@@ -127,7 +127,7 @@ function Skills() {
               <Fade>
             <span className="text-[#665A41] opacity-70 text-sm">DevOps | DB | Security</span>
 
-              <div className="w-auto flex flex-row justify-center-safe  gap-15">
+              <div className="w-auto flex flex-row  flex-wrap  justify-center-safe  gap-15">
                 {OtherTecnhologies.map((skill, index) => (
                   <CardSkill
                     fadeDelay={index * 100}

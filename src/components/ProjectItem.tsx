@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
-function ProjectItem({ number, title, videoSrc, companyLogo, technologies }) {
+function ProjectItem({ number, title, videoSrc, companyLogo, technologies,urlWebsite }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -17,21 +17,22 @@ function ProjectItem({ number, title, videoSrc, companyLogo, technologies }) {
 
   return (
     <a
-    href="https://namastox.upf.edu"
+    href={urlWebsite}
     target="_blank"
-      className="flex group cursor-pointer flex-row justify-between min-h-40 relative"
+      className="flex group flex-wrap cursor-pointer flex-row justify-between  min-h-20  md:min-h-40 relative"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <span className="index text-7xl group-hover:pl-2 transition-all duration-300 ease-in-out opacity-50 group-hover:opacity-100 text-[#665A41]">
+      <span className="index text-3xl md:text-7xl group-hover:pl-2 transition-all duration-300 ease-in-out opacity-50 group-hover:opacity-100 text-[#665A41]">
         {number}
       </span>
       <div className="flex flex-col h-auto justify-between items-center">
-        <span className="text-5xl z-10 transition-all self-center duration-300 ease-in-out opacity-50 group-hover:opacity-100 text-[#665A41]">
+        <span className="text-2xl  md:text-5xl z-10 transition-all self-center duration-300 ease-in-out opacity-50 group-hover:opacity-100 text-[#665A41]">
           {title}
         </span>
-        <div className="flex flex-row gap-10">
+        
+        <div className="flex flex-row gap-4  md:gap-10">
           {technologies.map((technology, index) => (
             <div
               key={index}
@@ -42,16 +43,16 @@ function ProjectItem({ number, title, videoSrc, companyLogo, technologies }) {
           ))}
         </div>
       </div>
-
-      {companyLogo && (
+     {companyLogo && (
         <img
           id="upf_logo"
-          className="self-start sepia transition-all duration-300 ease-in-out group-hover:sepia-0 rounded"
+          className="self-start w-[25px]  md:w-[50px] sepia transition-all duration-300 ease-in-out group-hover:sepia-0 rounded"
           src={companyLogo}
-          width={50}
+        
           alt="Logo"
         />
       )}
+ 
 
       {/* Video que sigue el cursor */}
       <motion.video
